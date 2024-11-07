@@ -1,0 +1,120 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+
+/* BoxIcons */
+@import url("https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css");
+
+* {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.5em;
+	background-color: rgb(231, 230, 230);
+	color: #fff;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.icon_wrap {
+	margin: 0 auto;
+	display: flex;
+	gap: 100px;
+	width: 100%;
+}
+.icon_wrap .icon {
+	flex: 1;
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(-30deg) skew(20deg);
+	position: relative;
+	box-shadow: -25px 25px 15px rgba(0, 0, 0, 0.455);
+	cursor: pointer;
+	transition: .8s;
+}
+.icon_wrap .icon:before {
+	content: '';
+	position: absolute;
+	top: 29px;
+	left: -25px;
+	height: 83px;
+	width: 30px;
+	background-color: rgb(167, 167, 167);
+	transform: rotate(-46deg) skew(-46deg);
+}
+.icon_wrap .icon:after {
+	content: '';
+	position: absolute;
+	top: 88px;
+	left: 34px;
+	height: 86px;
+	width: 30px;
+	background-color: rgb(211, 211, 211);
+	transform: rotate(134deg) skew(44deg);
+}
+.icon_wrap .icon i {
+	color: black;
+	font-size: 45px;
+}
+/* Hover Function */
+.icon:nth-child(1):hover {
+	background-color: #1877F2;
+}
+.icon:nth-child(2):hover {
+	background-color: #1DA1F2
+}
+.icon:nth-child(3):hover {
+	background-color:  #CD201f;
+}
+
+.icon:nth-child(4):hover {
+	background-color: #0a66c2
+}
+.icon:nth-child(5):hover {
+	background-color: #E4405f
+}
+.icon:hover {
+	transform: rotate(-30deg) skew(20deg) translateY(-50px) translateX(50px);
+	box-shadow: -80px 80px 40px rgba(0, 0, 0, 0.455);
+}
+.btn_X {
+	position: fixed;
+	top: 20px;
+	right: 4%;
+	border-radius: 50px;
+	border: 1px solid #41414173;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+.btn_X:after,
+.btn_X:before {
+	content: '';
+	width: 40px;
+	height: 2px;
+	background-color: #41414173;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.btn_X:after {
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+.btn_X:before {
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+
